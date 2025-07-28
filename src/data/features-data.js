@@ -5,24 +5,24 @@ import {
 export const featuresData = [
   {
     color: "gray",
-    title: "Awarded Agency",
+    title: "Strategic Legal Tech Advisory",
     icon: ChatBubbleBottomCenterTextIcon,
     description:
-      "Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.",
+      "We help legal teams navigate digital transformation with deep insight into legal operations and emerging technologies.",
   },
   {
     color: "gray",
-    title: "Free Revisions",
+    title: "Official Partner of Knovos",
     icon: ChatBubbleBottomCenterTextIcon,
     description:
-      "Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.",
+      "As a certified partner of Knovos, we bring you cutting-edge solutions for eDiscovery, legal project management, compliance, and more — tailored to your needs",
   },
   {
     color: "gray",
-    title: "Verified Company",
+    title: "End-to-End Consulting",
     icon: ChatBubbleBottomCenterTextIcon,
     description:
-      "Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!",
+      "From strategy and scoping to implementation and training, we provide hands-on support at every step to ensure smooth, effective tech adoption.",
   },
 ];
 

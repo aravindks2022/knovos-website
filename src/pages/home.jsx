@@ -29,12 +29,10 @@ export function Home() {
                 color="white"
                 className="mb-6 font-black"
               >
-                Your story starts with us.
+                Empowering Digital Transformation
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                This is a simple example of a Landing Page you can build using
-                Material Tailwind. It features multiple components based on the
-                Tailwind CSS and Material Design by Google.
+                We partner with technology leaders to help teams modernize their workflows, stay compliant, and work smarter.
               </Typography>
             </div>
           </div>
@@ -65,22 +63,21 @@ export function Home() {
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                Working with us is a pleasure
+                Tailored Legal Tech Consulting, Backed by Experience
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
+                We don’t believe in one-size-fits-all. 
+                Every organization’s legal and compliance needs are unique — that’s why we work closely with you to identify, implement, and optimize solutions that actually fit your context.
                 <br />
                 <br />
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
+                Whether you're looking to streamline litigation management, 
+                improve compliance workflows, or gain insights from legal data, 
+                we partner with leading platforms like Knovos to deliver real, measurable outcomes.
               </Typography>
-              <Button variant="filled">read more</Button>
+              {/* <Button variant="filled">read more</Button> */}
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-              <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
+              {/* <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
                 <CardHeader floated={false} className="relative h-56">
                   <img
                     alt="Card Image"
@@ -103,19 +100,17 @@ export function Home() {
                     continue whatever happens.
                   </Typography>
                 </CardBody>
-              </Card>
+              </Card> */}
             </div>
           </div>
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48">
+      <section className="px-4 pt-20 pb-24">
         <div className="container mx-auto">
-          <PageTitle section="Our Team" heading="Here are our heroes">
-            According to the National Oceanic and Atmospheric Administration,
-            Ted, Scambos, NSIDClead scentist, puts the potentially record
-            maximum.
+          <PageTitle section="Our Team" heading="Here are the team members">
+            Meet the people that make it all happen.
           </PageTitle>
-          <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-24 flex flex-wrap justify-center gap-12">
             {teamData.map(({ img, name, position, socials }) => (
               <TeamCard
                 key={name}
@@ -136,7 +131,7 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="relative bg-white py-24 px-4">
+      {/* <section className="relative bg-white py-24 px-4">
         <div className="container mx-auto">
           <PageTitle section="Co-Working" heading="Build something">
             Put the potentially record low maximum sea ice extent tihs year down
@@ -197,7 +192,7 @@ export function Home() {
             </Button>
           </form>
         </div>
-      </section>
+      </section> */}
       <div className="bg-white">
         <Footer />
       </div>
