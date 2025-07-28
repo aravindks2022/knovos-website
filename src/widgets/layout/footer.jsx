@@ -5,14 +5,14 @@ const year = new Date().getFullYear();
 
 export function Footer({ title, description, socials, menus, copyright }) {
   return (
-    <footer className="relative px-4 pt-8 pb-6">
+    <footer className="bg-black text-white relative px-4 pt-8 pb-6">
       <div className="container mx-auto">
         <div className="flex flex-wrap pt-6 text-center lg:text-left">
           <div className="w-full px-4 lg:w-6/12">
-            <Typography variant="h4" className="mb-4" color="blue-gray">
+            <Typography variant="h4" className="mb-4" color="white">
               {title}
             </Typography>
-            <Typography className="font-normal text-blue-gray-500 lg:w-2/5">
+            <Typography className="font-normal text-white lg:w-2/5">
               {description}
             </Typography>
             {/* <div className="mx-auto mt-6 mb-8 flex justify-center gap-2 md:mb-0 lg:justify-start">
@@ -37,7 +37,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
               <div key={name}>
                 <Typography
                   variant="small"
-                  color="blue-gray"
+                  color="white"
                   className="mb-2 block font-medium uppercase"
                 >
                   {name}
@@ -51,7 +51,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
                         target="_blank"
                         rel="noreferrer"
                         variant="small"
-                        className="mb-2 block font-normal text-blue-gray-500 hover:text-blue-gray-700"
+                        className="mb-2 block font-normal white hover:text-blue-gray-700"
                       >
                         {item.name}
                       </Typography>
@@ -81,7 +81,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
 Footer.defaultProps = {
   title: "Mantra Data Consultants",
   description:
-    "Easy to use React components for Tailwind CSS and Material Design.",
+    "Data Management, RedefAIned",
   socials: [
     {
       color: "gray",
@@ -108,11 +108,10 @@ Footer.defaultProps = {
     {
       name: "useful links",
       items: [
-        { name: "Home", path: "https://www.creative-tim.com/presentation" },
-        { name: "Solutions", path: "https://www.creative-tim.com/blog" },
+        { name: "Home", path: "/home" },
         {
           name: "Contact Us",
-          path: "https://www.github.com/creativetimofficial/material-tailwind?ref=mtk",
+          path: "/contactus",
         },
       ],
     },

@@ -1,25 +1,30 @@
-import { Home, Profile, SignIn, SignUp } from "@/pages";
+import { Home, Profile, SignIn, SignUp, ContactUs, Solutions } from "@/pages";
 
 export const routes = [
   {
-    name: "home",
+    name: "Home",
     path: "/home",
     element: <Home />,
   },
   // {
-  //   name: "solutions",
+  //   name: "Solutions",
   //   path: "/solutions",
   //   element: <Solutions />,
   // },
-  // {
-  //   name: "Contact",
-  //   path: "/contact",
-  //   element: <Contact />,
-  // },
+  {
+    name: "Contact Us",
+    path: "/contactus",
+    element: <ContactUs />,
+  },
   // {
   //   name: "Sign Up",
   //   path: "/sign-up",
   //   element: <SignUp />,
+  // },
+  //   {
+  //   name: "Sign In",
+  //   path: "/sign-in",
+  //   element: <SignIn />,
   // },
   // {
   //   name: "Docs",

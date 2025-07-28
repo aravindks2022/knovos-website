@@ -2,27 +2,52 @@ import {
   BriefcaseIcon,
   ChartBarIcon,
   PlayIcon,
+  MagnifyingGlassIcon,
+  Cog8ToothIcon,
+  DocumentIcon,
+  UsersIcon,
+
+  
 } from "@heroicons/react/24/solid";
 
 export const contactData = [
   {
-    title: "Excelent Services",
+    title: "Discovery",
+    icon: MagnifyingGlassIcon,
+    description:
+      "An End-to-end eDiscovery technology enabling you to perform all or any stage of the EDRM spectrum right from ESI processing to review and production.",
+  },
+  {
+    title: "GRC",
     icon: BriefcaseIcon,
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "A complete Information Governance, Risk, and Compliance (GRC) solution that automates enterprise data management, litigation, and compliance monitoring.",
   },
   {
-    title: "Grow Your Market",
+    title: "Manage",
+    icon: Cog8ToothIcon,
+    description:
+      "An operations management platform adaptable to any business process catering to law firms, enterprises, in-house teams, governments, or serviceproviders.",
+  },
+   {
+    title: "Rooms",
+    icon: DocumentIcon,
+    description:
+      "A highly secure platform that acts as a single source of truth for all documents. With built-in Contract Lifecycle Management capabilities, it's a one stop solution for all your document collaboration needs.",
+  },
+   {
+    title: "Arbitrate",
+    icon: UsersIcon,
+    description:
+      "A robust arbitration management solution with advanced collaboration and management capabilities to assist arbitration professionals during the arbitration stages.",
+  },
+   {
+    title: "Cascade",
     icon: ChartBarIcon,
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "A fully-integrated Performance Management solution that links strategic planning, performance budgeting, and performance reporting across various entities of government.",
   },
-  {
-    title: "Launch Time",
-    icon: PlayIcon,
-    description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
-  },
+  
 ];
 
 export default contactData;
