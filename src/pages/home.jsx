@@ -33,7 +33,7 @@ export function Home() {
                 Data Management, Redef<span className="text-red-500">AI</span>ned
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                We partner with technology leaders to help teams modernize their workflows, stay compliant, and work smarter.
+                Your bridge to Legal Tech Excellence — In Collaboration with Knovos, a pioneer in global AI based Legal and ESG solutions
               </Typography>
             </div>
           </div>
@@ -55,28 +55,32 @@ export function Home() {
             ))}
           </div>
           <div className="mt-32 flex flex-wrap items-center">
-            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
-                <BriefcaseIcon className="h-8 w-8 text-white " />
+            <div className="mx-auto -mt-8 w-full md:w-8/12">
+            <div className="items-center justify-center text-center">
+              <div id="whatwedo" className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
+                <BriefcaseIcon className="h-8 w-8 text-white mx-auto" />
+              </div>
               </div>
               <Typography
                 variant="h3"
-                className="mb-3 font-bold"
+                className="mb-3 font-bold text-center"
                 color="blue-gray"
               >
-                Tailored Legal Tech Consulting, Backed by Experience
+                What We Do
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                We don’t believe in one-size-fits-all. 
-                Every organization’s legal and compliance needs are unique — that’s why we work closely with you to identify, implement, and optimize solutions that actually fit your context.
+                At MantraDATA Consulting, we empower law firms, corporate legal departments, 
+                and ESG-driven organizations to streamline their operations through advanced legal and ESG technology solutions. 
+                As a trusted implementation and sales partner of Knovos, a global leader in legal tech, we help clients adopt cutting-edge platforms for eDiscovery, 
+                contract lifecycle management, compliance, collaboration, and litigation support.
                 <br />
                 <br />
-                Whether you're looking to streamline litigation management, 
-                improve compliance workflows, or gain insights from legal data, 
-                we partner with leading platforms like Knovos to deliver real, measurable outcomes.
+                We specialize in bridging the gap between legal expertise and technology by offering tailored digital solutions that improve efficiency, 
+                ensure regulatory alignment, and unlock strategic value. Whether it's automating workflows, managing  data securely ,  
+                collaborative work process, or supporting ESG compliance, we enable legal and compliance teams to perform more—with confidence and clarity.
               </Typography>
             </div>
-            <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
+            {/* <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
                 <CardHeader floated={false} className="relative h-56">
                   <img
@@ -99,23 +103,25 @@ export function Home() {
                   </Typography>
                 </CardBody>
               </Card>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
       <hr className="border-gray-300 mx-12" />
-      <section className="px-4 pt-20 pb-24">
+      <section id="team" className="px-4 pt-20 pb-24">
         <div className="container mx-auto">
           <PageTitle section="Our Team" heading="Here are the team members">
             Meet the people that make it all happen.
           </PageTitle>
           <div className="mt-24 flex flex-wrap justify-center gap-12">
-            {teamData.map(({ img, name, position, socials }) => (
+            {teamData.map(({ img, name, position, socials, tagline, description }) => (
               <TeamCard
                 key={name}
                 img={img}
                 name={name}
                 position={position}
+                tagline={tagline}
+                description={description}
                 socials={
                   <div className="flex items-center gap-2">
                     {socials.map(({ color, name }) => (
@@ -124,6 +130,7 @@ export function Home() {
                       </IconButton>
                     ))}
                   </div>
+                  
                 }
               />
             ))}

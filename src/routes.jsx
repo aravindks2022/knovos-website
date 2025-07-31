@@ -6,13 +6,21 @@ export const routes = [
     path: "/home",
     element: <Home />,
   },
-  // {
-  //   name: "Solutions",
-  //   path: "/solutions",
-  //   element: <Solutions />,
-  // },
   {
-    name: "Contact Us",
+    name: "What We Do",
+    hash: "whatwedo",
+  },
+  {
+    name: "Team",
+    hash: "team",
+  },
+  {
+    name: "Knovos Solutions",
+    path: "/solutions",
+    element: <Solutions />,
+  },
+  {
+    name: "Contact",
     path: "/contactus",
     element: <ContactUs />,
   },
