@@ -1,53 +1,56 @@
 import PropTypes from "prop-types";
-import { Card, Avatar, Typography } from "@material-tailwind/react";
+import { Card, Typography, IconButton } from "@material-tailwind/react";
 
 export function TeamCard({ img, name, position, tagline, description, socials }) {
   return (
     <Card
       color="transparent"
       shadow={false}
-      className="flex flex-col h-full w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 items-center border-gray-300 border rounded-lg hover:shadow-lg transition-shadow duration-300"
+      className="flex flex-col w-full sm:w-1/2 lg:w-full 
+                 px-4 mb-12 items-center border border-gray-800 rounded-2xl 
+                 bg-gradient-to-br from-black/80 via-gray-900 to-black/70 
+                 hover:shadow-[0_0_30px_#f87171aa] transition-all duration-300"
     >
-      {/* Top content grows to fill height */}
-      <div className="flex flex-col items-center flex-grow">
-        <Avatar
+      {/* Avatar */}
+      <div className="relative w-40 h-40 mt-8 mb-4 shrink-0">
+        {/* <div className="absolute inset-0 bg-gradient-to-tr from-red-600 via-orange-400 to-yellow-300 rounded-xl shadow-lg shadow-red-500/30" />
+        <div className="absolute inset-[4px] bg-black rounded-xl z-10" /> */}
+        <img
           src={img}
           alt={name}
-          size="xxl"
-          variant="rounded"
-          className="w-48 h-48 shadow-lg shadow-gray-500/25 mb-4 mt-5"
+          className="absolute inset-[8px] object-cover w-[calc(100%-16px)] h-[calc(100%-16px)] rounded-xl z-20"
         />
-        <Typography
-          variant="h5"
-          color="blue-gray"
-          className="mb-1 max-w-xs text-center"
-        >
+      </div>
+
+      {/* Info section */}
+      <div className="flex flex-col items-center text-center px-4 flex-1 w-full min-h-[250px] justify-start gap-1">
+        <Typography variant="h5" className="text-white font-bold leading-tight mb-1">
           {name}
         </Typography>
 
         {position && (
-          <Typography className="font-bold text-blue-gray-500 max-w-xs text-center">
+          <Typography className="text-sm font-semibold text-gray-400 leading-tight mb-1">
             {position}
           </Typography>
         )}
 
         {tagline && (
-          <Typography className="text-sm text-blue-gray-400 mt-1 max-w-xs text-center">
+          <Typography className="text-sm italic text-gray-500 leading-tight mb-2">
             {tagline}
           </Typography>
         )}
 
         {description && (
-          <Typography className="text-sm text-blue-gray-600 mt-2 max-w-xs text-center">
+          <Typography className="text-sm text-gray-400 leading-relaxed">
             {description}
           </Typography>
         )}
       </div>
 
-      {/* Bottom-aligned social icons */}
+      {/* Social icons */}
       {socials && (
-        <div className="mt-4 mb-2">
-          <div className="flex justify-center">{socials}</div>
+        <div className="mt-4 mb-6">
+          <div className="flex justify-center gap-2">{socials}</div>
         </div>
       )}
     </Card>

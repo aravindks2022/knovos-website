@@ -5,72 +5,127 @@ import {
   Button,
   Typography,
 } from "@material-tailwind/react";
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 export function ContactUs() {
   return (
     <>
-    <section className="flex w-full justify-center items-center mt-12">
-      <div className="w-full max-w-4xl flex flex-col items-center">
-        <div className="text-center">
-          <Typography variant="h2" className="font-bold mb-4">
-            Get in Touch
-          </Typography>
-          <Typography
-            variant="paragraph"
-            color="blue-gray"
-            className="text-lg font-normal"
-          >
-            We'd love to hear from you. Please fill out the form below.
-          </Typography>
+      <section
+        className="relative bg-top bg-repeat text-white"
+        style={{
+          backgroundImage: "url('/img/background-custom-2.png')",
+          backgroundSize: "auto",
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/30 z-0" />
+
+        {/* Content above overlay */}
+        <div className="relative z-10 flex w-full justify-center items-center px-4 py-20">
+          <div className="w-full max-w-4xl flex flex-col items-center mt-20">
+            <div className="text-center">
+              <Typography
+                variant="h1"
+                className="text-5xl font-extrabold bg-gradient-to-r from-red-600 via-orange-400 to-yellow-300 bg-clip-text text-transparent mb-8"
+              >
+                Get in Touch
+              </Typography>
+              <Typography className="text-lg font-normal text-gray-300">
+                We'd love to hear from you. Please fill out the form below.
+              </Typography>
+            </div>
+
+            <form className="mt-8 mb-2 w-full">
+              <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Name */}
+                <div className="flex flex-col">
+                  <label className="mb-1 text-gray-300">Your Name</label>
+                  <Input
+                    size="lg"
+                    className="bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                </div>
+
+                {/* Email */}
+                <div className="flex flex-col">
+                  <label className="mb-1 text-gray-300">Email Address</label>
+                  <Input
+                    size="lg"
+                    className="bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                </div>
+
+                {/* Phone Number */}
+                <div className="col-span-1 md:col-span-2 flex flex-col">
+                  <label className="mb-1 text-gray-300">Phone Number</label>
+                  <Input
+                    size="lg"
+                    className="bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                </div>
+
+                {/* Message */}
+                <div className="col-span-1 md:col-span-2 flex flex-col">
+                  <label className="mb-1 text-gray-300">Message</label>
+                  <Textarea
+                    rows={5}
+                    className="bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500"
+                  />
+                </div>
+              </div>
+
+              {/* Submit Button */}
+              <div className="flex justify-center">
+                <Button
+                  className="mt-6 w-full md:w-1/3 bg-gradient-to-r from-red-600 via-orange-400 to-yellow-300 text-black font-semibold shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  fullWidth
+                >
+                  Send Message
+                </Button>
+              </div>
+            </form>
+
+            {/* Alternative Contact Section */}
+            <div className="mt-16 w-full text-center border-t border-gray-700 pt-10">
+              <Typography
+                variant="h5"
+                className="font-semibold text-white mb-4"
+              >
+                Alternatively, reach us at:
+              </Typography>
+
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+                {/* Email */}
+                <div className="flex items-center gap-3">
+                  <EnvelopeIcon className="w-6 h-6" />
+                  <a
+                    href="mailto:Rama.Saravana@mantradataconsultants.com"
+                    className="text-gray-300 hover:text-yellow-300 transition-colors"
+                  >
+                    Rama.Saravana@mantradataconsultants.com
+                  </a>
+                </div>
+
+                {/* Phone */}
+                <div className="flex items-center gap-3">
+                  <PhoneIcon className="w-6 h-6" />
+                  <a
+                    href="tel:+6591891365"
+                    className="text-gray-300 hover:text-yellow-300 transition-colors"
+                  >
+                    +65 9189 1365
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <form className="mt-8 mb-2 w-full px-4 md:px-8">
-          <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Name */}
-            <Input
-              size="lg"
-              label="Your Name"
-              className="!border-t-blue-gray-200 focus:!border-t-gray-900"
-            />
-
-            {/* Email */}
-            <Input
-              size="lg"
-              label="Email Address"
-              className="!border-t-blue-gray-200 focus:!border-t-gray-900"
-            />
-
-            {/* Phone Number (full width on md+) */}
-            <div className="col-span-1 md:col-span-2">
-              <Input
-                size="lg"
-                label="Phone Number"
-                className="!border-t-blue-gray-200 focus:!border-t-gray-900"
-              />
-            </div>
-
-            {/* Message (full width) */}
-            <div className="col-span-1 md:col-span-2">
-              <Textarea
-                rows={5}
-                label="Message"
-                className="!border-t-blue-gray-200 focus:!border-t-gray-900"
-              />
-            </div>
-          </div>
-
-          {/* Submit Button */}
-          <div className="flex justify-center">
-            <Button className="mt-6 w-full md:w-1/3" fullWidth>
-              Send Message
-            </Button>
-          </div>
-        </form>
+      <hr className="border-gray-700" />
+      <div className="bg-black text-white">
+        <Footer />
       </div>
-    </section>
-    <div className="bg-white mt-12">
-            <Footer />
-          </div>
     </>
   );
 }

@@ -1,60 +1,37 @@
 import PropTypes from "prop-types";
-import {
-  Card,
-  CardBody,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
+import { Card, Typography } from "@material-tailwind/react";
 
-export function FeatureCard({ color, icon, title, description }) {
+export function FeatureCard({ icon, title, description }) {
   return (
-    <Card className="rounded-lg shadow-lg shadow-gray-500/10">
-      <CardBody className="px-8 text-center">
-        <IconButton
-          variant="gradient"
-          size="lg"
-          color={color}
-          className="pointer-events-none mb-6 rounded-full"
-        >
+    <Card
+      color="transparent"
+      shadow={false}
+      className="flex flex-col items-center text-center px-6 py-10 border border-gray-800 rounded-2xl 
+                 bg-gradient-to-br from-black/80 via-gray-900 to-black/70 
+                 hover:shadow-[0_0_25px_#f87171aa] transition-all duration-300"
+    >
+      <div className="relative w-20 h-20 mb-6">
+        <div className="absolute inset-[4px] bg-black rounded-full z-10" />
+        <div className="absolute inset-[8px] flex items-center justify-center text-red-500 z-20">
           {icon}
-        </IconButton>
-        <Typography variant="h5" className="mb-2" color="blue-gray">
-          {title}
-        </Typography>
-        <Typography className="font-normal text-blue-gray-600">
-          {description}
-        </Typography>
-      </CardBody>
+        </div>
+      </div>
+
+      <Typography variant="h5" className="text-white font-bold leading-tight mb-2">
+        {title}
+      </Typography>
+      <Typography className="text-sm text-gray-300 leading-relaxed">
+        {description}
+      </Typography>
     </Card>
   );
 }
 
 FeatureCard.defaultProps = {
-  color: "blue",
+  color: "red",
 };
 
 FeatureCard.propTypes = {
-  color: PropTypes.oneOf([
-    "blue-gray",
-    "gray",
-    "brown",
-    "deep-orange",
-    "orange",
-    "amber",
-    "yellow",
-    "lime",
-    "light-green",
-    "green",
-    "teal",
-    "cyan",
-    "light-blue",
-    "blue",
-    "indigo",
-    "deep-purple",
-    "purple",
-    "pink",
-    "red",
-  ]),
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.node.isRequired,

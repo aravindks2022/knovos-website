@@ -1,4 +1,4 @@
-import { Home, Profile, SignIn, SignUp, ContactUs, Solutions } from "@/pages";
+import { Home, ContactUs, Solutions, EndToEndSupport, AboutUs } from "@/pages";
 
 export const routes = [
   {
@@ -7,39 +7,26 @@ export const routes = [
     element: <Home />,
   },
   {
-    name: "What We Do",
-    hash: "whatwedo",
+    name: "About Us",
+    path: "/about-us",
+    element: <AboutUs />,
   },
   {
-    name: "Team",
-    hash: "team",
+    name: "End-to-End",
+    path: "/end-to-end",
+    element: <EndToEndSupport />,
   },
   {
     name: "Knovos Solutions",
     path: "/solutions",
     element: <Solutions />,
   },
+  
   {
     name: "Contact",
     path: "/contactus",
     element: <ContactUs />,
   },
-  // {
-  //   name: "Sign Up",
-  //   path: "/sign-up",
-  //   element: <SignUp />,
-  // },
-  //   {
-  //   name: "Sign In",
-  //   path: "/sign-in",
-  //   element: <SignIn />,
-  // },
-  // {
-  //   name: "Docs",
-  //   href: "https://www.material-tailwind.com/docs/react/installation",
-  //   target: "_blank",
-  //   element: "",
-  // },
 ];
 
 export default routes;
