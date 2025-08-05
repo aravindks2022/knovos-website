@@ -28,7 +28,7 @@ export function AboutUs() {
         </div>
 
         {/* Who We Are */}
-        <div className="p-8 rounded-2xl border border-gray-800 bg-gradient-to-br from-black/80 via-gray-900 to-black/70 shadow-lg hover:shadow-[0_0_25px_#f87171aa] transition-all duration-300 space-y-6">
+        <div className="p-8 rounded-2xl border border-gray-800 bg-gradient-to-br from-black/80 via-gray-900 to-black/70 shadow-lg space-y-6">
           <div className="flex items-center gap-3">
             <div className="w-1 h-8 bg-gradient-to-b from-red-600 via-orange-400 to-yellow-300 rounded-sm" />
             <Typography variant="h4" className="font-bold text-white">
@@ -67,7 +67,7 @@ export function AboutUs() {
           ].map((item, i) => (
             <div
               key={i}
-              className="p-6 rounded-2xl border border-gray-800 bg-gradient-to-br from-black/80 via-gray-900 to-black/70 shadow-md hover:shadow-[0_0_25px_#f87171aa] transition-all duration-300 space-y-3"
+              className="p-6 rounded-2xl border border-gray-800 bg-gradient-to-br from-black/80 via-gray-900 to-black/70 shadow-md space-y-3"
             >
               <div className="flex items-center gap-3">
                 <div className="w-1 h-6 bg-gradient-to-b from-red-600 via-orange-400 to-yellow-300 rounded-sm" />
@@ -83,7 +83,7 @@ export function AboutUs() {
         </div>
 
         {/* Our Story */}
-        <div className="p-8 rounded-2xl border border-gray-800 bg-gradient-to-br from-black/80 via-gray-900 to-black/70 shadow-lg hover:shadow-[0_0_25px_#f87171aa] transition-all duration-300 space-y-6">
+        <div className="p-8 rounded-2xl border border-gray-800 bg-gradient-to-br from-black/80 via-gray-900 to-black/70 shadow-lg space-y-6">
           <div className="flex items-center gap-3">
             <div className="w-1 h-8 bg-gradient-to-b from-red-600 via-orange-400 to-yellow-300 rounded-sm" />
             <Typography variant="h4" className="font-bold text-white">

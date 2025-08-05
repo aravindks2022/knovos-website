@@ -7,8 +7,7 @@ export function FeatureCard({ icon, title, description }) {
       color="transparent"
       shadow={false}
       className="flex flex-col items-center text-center px-6 py-10 border border-gray-800 rounded-2xl 
-                 bg-gradient-to-br from-black/80 via-gray-900 to-black/70 
-                 hover:shadow-[0_0_25px_#f87171aa] transition-all duration-300"
+                 bg-gradient-to-br from-black/80 via-gray-900 to-black/70"
     >
       <div className="relative w-20 h-20 mb-6">
         <div className="absolute inset-[4px] bg-black rounded-full z-10" />

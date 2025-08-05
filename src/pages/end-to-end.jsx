@@ -35,7 +35,6 @@ const EndToEndSupport = () => {
                 key={index}
                 className="rounded-2xl border border-gray-800 p-6 
                            bg-gradient-to-br from-black/80 via-gray-900 to-black/70 
-                           hover:shadow-[0_0_25px_#f87171aa] transition-all duration-300
                            flex flex-col md:flex-row items-start md:items-center gap-6"
               >
                 {/* Icon container with gradient ring */}

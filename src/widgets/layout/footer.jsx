@@ -7,11 +7,11 @@ const year = new Date().getFullYear();
 export function Footer({ title, description, socials, menus, copyright }) {
   return (
     <footer className="bg-black text-white relative px-4 pb-6">
-      <div className="container mx-auto">
-        <div className="flex flex-wrap pt-6 text-center lg:text-left gap-12 lg:gap-0">
-          
-          {/* Company Info */}
-          <div className="w-full px-4 lg:w-4/12">
+      {/* keep the container but cap the width a bit for nicer mobile centering */}
+      <div className="container mx-auto max-w-screen-lg">
+        <div className="flex flex-wrap pt-6 text-center lg:text-left gap-12 lg:gap-0 justify-center">
+          {/* Company Info - Hidden on mobile */}
+          <div className="hidden lg:block w-full px-4 lg:w-4/12">
             <Typography variant="h4" className="mb-4" color="white">
               {title}
             </Typography>
@@ -21,9 +21,9 @@ export function Footer({ title, description, socials, menus, copyright }) {
           </div>
 
           {/* Useful Links */}
-          <div className="mx-auto grid w-max grid-cols-2 gap-24">
+          <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 place-items-center text-center lg:text-left">
             {menus.map(({ name, items }) => (
-              <div key={name}>
+              <div key={name} className="w-max">
                 <Typography
                   variant="small"
                   color="white"
@@ -52,7 +52,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
           </div>
 
           {/* Contact Details */}
-          <div className="w-full px-4 lg:w-4/12">
+          <div className="w-full px-4 lg:w-4/12 max-w-md mx-auto text-center lg:text-left">
             <Typography
               variant="small"
               color="white"
@@ -61,7 +61,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
               Contact Details
             </Typography>
             <ul className="mt-3 space-y-3">
-              <li className="flex items-center gap-2">
+              <li className="flex items-center justify-center lg:justify-start gap-2">
                 <EnvelopeIcon className="w-5 h-5" />
                 <a
                   href="mailto:Rama.Saravana@mantradataconsultants.com"
@@ -70,7 +70,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
                   Rama.Saravana@mantradataconsultants.com
                 </a>
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center justify-center lg:justify-start gap-2">
                 <PhoneIcon className="w-5 h-5" />
                 <a
                   href="tel:+6591891365"
@@ -79,7 +79,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
                   +65 9189 1365
                 </a>
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center justify-center lg:justify-start gap-2">
                 <i className="fa-brands fa-linkedin text-xl text-gray-400 transition-all duration-300" />
                 <a
                   href="https://www.linkedin.com/company/mantradata-consultants/"
@@ -98,10 +98,10 @@ export function Footer({ title, description, socials, menus, copyright }) {
         <div className="h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent my-6" />
 
         {/* Bottom Bar */}
-        <div className="flex flex-wrap items-center justify-center md:justify-between text-center">
+        <div className="flex flex-wrap items-center justify-center text-center">
           <div className="mx-auto w-full px-4">
             <Typography variant="small" className="font-normal text-gray-400">
-              © {year} Mantra Data Consultants  
+              © {year} Mantra Data Consultants
               <span className="text-xs text-gray-600 block mt-1">
                 Built with Material Tailwind by{" "}
                 <a

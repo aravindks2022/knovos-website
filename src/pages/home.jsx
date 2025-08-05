@@ -1,17 +1,15 @@
 import React from "react";
-import {
-  Typography,
-} from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 import { BriefcaseIcon } from "@heroicons/react/24/solid";
 
 import { Footer } from "@/widgets/layout";
 import { FeatureCard } from "@/widgets/cards";
-import { featuresData} from "@/data";
+import { featuresData } from "@/data";
 
 export function Home() {
   return (
     <section
-      className="relative bg-top bg-repeat text-white"
+      className="relative bg-top bg-repeat text-white min-h-screen"
       style={{
         backgroundImage: "url('/img/background-custom-2.png')",
         backgroundSize: "auto",
@@ -24,18 +22,16 @@ export function Home() {
       <div className="relative z-10">
         {/* Hero Section */}
         <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
-          <div className="absolute top-0 h-full w-full bg-[url('/img/background-custom-1.png')] bg-cover bg-center" />
-          <div className="absolute top-0 h-full w-full bg-black/60" />
           <div className="max-w-8xl container relative mx-auto">
             <div className="flex flex-wrap items-center">
               <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
                 <Typography variant="h1" className="mb-6 font-black text-white">
-                  <span className="bg-gradient-to-r from-red-600 via-orange-400 to-yellow-300 bg-clip-text text-transparent ">
+                  <span className="bg-gradient-to-r from-red-600 via-orange-400 to-yellow-300 bg-clip-text text-transparent">
                     Data Management, Redef<span className="text-red-500">AI</span>ned
                   </span>
                 </Typography>
                 <Typography variant="lead" className="text-white opacity-80">
-                  Your bridge to Legal Tech Excellence — In Collaboration with Knovos, a pioneer in global AI based Legal and ESG solutions
+                  Your bridge to Legal Tech Excellence — In Collaboration with Knovos, a pioneer in global AI-based Legal and ESG solutions
                 </Typography>
               </div>
             </div>
