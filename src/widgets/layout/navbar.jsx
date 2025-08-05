@@ -30,8 +30,8 @@ export function Navbar({ brandName, routes }) {
   };
 
   const activeClasses =
-  "text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-orange-400 to-yellow-300";
-const baseClasses = "text-white hover:text-gray-300";
+  "font-heading text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-orange-400 to-yellow-300";
+const baseClasses = "font-heading text-white hover:text-gray-300";
 
   return (
     <MTNavbar

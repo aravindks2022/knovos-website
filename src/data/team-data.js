@@ -7,6 +7,7 @@ export const teamData = [
       {
         color: "blue",
         name: "linkedin",
+        url: "https://www.linkedin.com/in/rama-saravana-kumar/"
       },
     ],
     tagline: "Bridging legal workflows with AI-powered solutions",
@@ -20,6 +21,7 @@ export const teamData = [
       {
         color: "blue",
         name: "linkedin",
+        url: "https://www.linkedin.com/in/ramamoorthy-sethukumar-55154647/"
       },
     ],
     tagline: "Engineering robust legal tech backbones",
@@ -32,6 +34,7 @@ export const teamData = [
       {
         color: "blue",
         name: "linkedin",
+        url: "https://www.linkedin.com/in/aravind-k-saravana-99b413136/"
       },
     ],
     tagline: "Securing digital transformation in the cloud",

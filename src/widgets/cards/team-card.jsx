@@ -9,12 +9,10 @@ export function TeamCard({ img, name, position, tagline, description, socials })
       className="flex flex-col w-full sm:w-1/2 lg:w-full 
                  px-4 mb-12 items-center border border-gray-800 rounded-2xl 
                  bg-gradient-to-br from-black/80 via-gray-900 to-black/70 
-                 hover:shadow-[0_0_30px_#f87171aa] transition-all duration-300"
+                transition-all duration-300"
     >
       {/* Avatar */}
       <div className="relative w-40 h-40 mt-8 mb-4 shrink-0">
-        {/* <div className="absolute inset-0 bg-gradient-to-tr from-red-600 via-orange-400 to-yellow-300 rounded-xl shadow-lg shadow-red-500/30" />
-        <div className="absolute inset-[4px] bg-black rounded-xl z-10" /> */}
         <img
           src={img}
           alt={name}

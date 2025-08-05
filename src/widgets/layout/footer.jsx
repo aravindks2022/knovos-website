@@ -65,7 +65,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
                 <EnvelopeIcon className="w-5 h-5" />
                 <a
                   href="mailto:Rama.Saravana@mantradataconsultants.com"
-                  className="hover:text-yellow-300 transition-colors"
+                  className="hover:text-yellow-800 transition-colors"
                 >
                   Rama.Saravana@mantradataconsultants.com
                 </a>
@@ -74,9 +74,20 @@ export function Footer({ title, description, socials, menus, copyright }) {
                 <PhoneIcon className="w-5 h-5" />
                 <a
                   href="tel:+6591891365"
-                  className="hover:text-yellow-300 transition-colors"
+                  className="hover:text-yellow-800 transition-colors"
                 >
                   +65 9189 1365
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <i className="fa-brands fa-linkedin text-xl text-gray-400 transition-all duration-300" />
+                <a
+                  href="https://www.linkedin.com/company/mantradata-consultants/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-yellow-800 transition-colors"
+                >
+                  LinkedIn
                 </a>
               </li>
             </ul>
@@ -113,7 +124,6 @@ export function Footer({ title, description, socials, menus, copyright }) {
 Footer.defaultProps = {
   title: "Mantra Data Consultants",
   description: "Data Management, RedefAIned",
-  socials: [],
   menus: [
     {
       name: "useful links",

@@ -120,23 +120,35 @@ export function AboutUs() {
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 items-stretch">
           {teamData.map(({ img, name, position, socials, tagline, description }) => (
             <TeamCard
-              key={name}
-              img={img}
-              name={name}
-              position={position}
-              tagline={tagline}
-              description={description}
-              socials={
+                key={name}
+                img={img}
+                name={name}
+                position={position}
+                tagline={tagline}
+                description={description}
+                socials={
                 <div className="flex items-center gap-2">
-                  {socials.map(({ color, name }) => (
-                    <IconButton key={name} color={color} variant="text">
-                      <i className={`fa-brands text-xl fa-${name}`} />
-                    </IconButton>
-                  ))}
+                    {socials.map(({ color, name: iconName, url }) => (
+                    <a
+                        key={iconName}
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group"
+                    >
+                        <IconButton
+                        color={color}
+                        variant="text"
+                        className="transition-all duration-300 group-hover:text-blue-500 group-hover:shadow-[0_0_15px_#0A66C2]"
+                        >
+                        <i className={`fa-brands text-xl fa-${iconName}`} />
+                        </IconButton>
+                    </a>
+                    ))}
                 </div>
-              }
+                }
             />
-          ))}
+            ))}
         </div>
       </div>
 
