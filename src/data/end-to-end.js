@@ -5,9 +5,17 @@ import {
   AcademicCapIcon,
   ArrowPathIcon,
   ArrowsPointingInIcon,
+  Cog8ToothIcon
 } from "@heroicons/react/24/solid";
+import { Handshake } from "lucide-react";
 
 export const steps = [
+  {
+    title: "Pre-Sales Stage - Consultation",
+    icon: Handshake,
+    description:
+      "Our approach goes beyond selling. From the earliest stages of engagement, we work closely with you to understand your needs, present tailored solutions, and ensure our efforts deliver sustainable, long-term productivity.",
+  },
   {
     title: "Current Systems Assessment",
     icon: MagnifyingGlassIcon,
@@ -19,6 +27,12 @@ export const steps = [
     icon: CloudIcon,
     description:
       "We evaluate technical prerequisites like server capacity, cloud adoption readiness, and data governance—ensuring secure, efficient integration of Knovos solutions.",
+  },
+  {
+    title: "Hassle-free Implementation",
+    icon: Cog8ToothIcon,
+    description:
+      "We collaborate with your team to implement the agreed solution seamlessly and efficiently, ensuring they are fully engaged, well-trained, and equipped with both the functional and infrastructure knowledge needed to maximize its benefits.",
   },
   {
     title: "Seamless Onboarding & Team Alignment",
@@ -42,7 +56,7 @@ export const steps = [
     title: "Customer Success, Not Just Support",
     icon: ArrowsPointingInIcon,
     description:
-      "We focus on delivering ROI, aligning platform use with business goals, and driving long-term engagement and stakeholder satisfaction.",
+      "We are committed to ensuring you gain maximum value from our solutions, providing ongoing support and updates to the latest versions for sustained success.",
   },
 ];
 

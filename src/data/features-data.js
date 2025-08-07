@@ -1,9 +1,8 @@
 import {
-  ChatBubbleBottomCenterTextIcon,
   Cog8ToothIcon,
-  UserIcon,
   ArrowPathIcon,
 } from "@heroicons/react/24/solid";
+import { Handshake } from "lucide-react";
 
 export const featuresData = [
   {
@@ -16,7 +15,7 @@ export const featuresData = [
   {
     color: "gray",
     title: "Official Partner of Knovos",
-    icon: UserIcon,
+    icon: Handshake,
     description:
       "As a certified partner of Knovos, we bring you cutting-edge solutions for eDiscovery, legal project management, compliance, and more — tailored to your needs",
   },

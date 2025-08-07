@@ -29,7 +29,7 @@ export function Solutions() {
         <div className="relative h-[400px] md:h-[400px] flex items-center justify-center text-center px-4">
           <div>
             <h1 className="text-5xl font-extrabold bg-gradient-to-r from-red-600 via-orange-400 to-yellow-300 bg-clip-text text-transparent mt-20 mb-10">
-              Knovos Solutions
+              Our Solutions
             </h1>
             <p className="text-white text-lg max-w-4xl mx-auto">
               As an implementation partner for Knovos in Singapore and Southeast Asia, MantraDATA offers localized expertise for a powerful suite of legal tech solutions.

@@ -17,7 +17,7 @@ export const routes = [
     element: <EndToEndSupport />,
   },
   {
-    name: "Knovos Solutions",
+    name: "Our Solutions",
     path: "/solutions",
     element: <Solutions />,
   },

@@ -13,12 +13,13 @@ export function TeamCard({ img, name, position, tagline, description, socials })
     >
       {/* Avatar */}
       <div className="relative w-40 h-40 mt-8 mb-4 shrink-0">
-        <img
-          src={img}
-          alt={name}
-          className="absolute inset-[8px] object-cover w-[calc(100%-16px)] h-[calc(100%-16px)] rounded-xl z-20"
-        />
-      </div>
+  <img
+    src={img}
+    alt={name}
+    className="absolute inset-[8px] object-cover object-top w-[calc(100%-16px)] h-[calc(100%-16px)] rounded-xl z-20"
+  />
+</div>
+
 
       {/* Info section */}
       <div className="flex flex-col items-center text-center px-4 flex-1 w-full min-h-[250px] justify-start gap-1">

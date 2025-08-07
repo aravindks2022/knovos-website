@@ -53,12 +53,12 @@ export function AboutUs() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
-              title: "Our Mission",
-              text: "Empower legal and ESG organizations with technology and insight to streamline compliance, enhance performance, and safeguard information.",
-            },
-            {
               title: "Our Vision",
               text: "To be Southeast Asia’s trusted partner for digital legal and ESG transformation — built on trust, clarity, and innovation.",
+            },
+            {
+              title: "Our Mission",
+              text: "Empower legal and ESG organizations with technology and insight to streamline compliance, enhance performance, and safeguard information.",
             },
             {
               title: "Our Goal",

@@ -1,8 +1,8 @@
 export const teamData = [
   {
-    img: "/img/team-1.jpeg",
-    name: "Rama Saravana Kumar",
-    position: "Founder & Legal Tech Consultant",
+    img: "/img/saravana-avatar.png",
+    name: "Rama Saravana",
+    position: "Founder cum Lead Consultant",
     socials: [
       {
         color: "blue",
@@ -10,13 +10,13 @@ export const teamData = [
         url: "https://www.linkedin.com/in/rama-saravana-kumar/"
       },
     ],
-    tagline: "Bridging legal workflows with AI-powered solutions",
-    description: "Rama brings 5+ years of paralegal and legal tech experience, leading strategy and implementation for legal and ESG teams in Singapore."
+    tagline: "Works with you end-to end to achieve your goals",
+    description: "Rama brings 20+ years of paralegal and IT experience, leading strategy and implementation for legal and ESG teams in Singapore."
   },
   {
     img: "/img/team-2.jpeg",
     name: "Rama Sethu",
-    position: "Infrastructure & Systems Integration Lead",
+    position: "External Expert Advisor",
     socials: [
       {
         color: "blue",
@@ -24,7 +24,7 @@ export const teamData = [
         url: "https://www.linkedin.com/in/ramamoorthy-sethukumar-55154647/"
       },
     ],
-    tagline: "Engineering robust legal tech backbones",
+    tagline: "Infrastructure & Systems Integration",
     description: "A seasoned infrastructure expert, Sethu ensures our clients' systems are optimized, secure, and integration-ready, both on-premise or in the cloud."
   },{
     img: "/img/aravind-avatar.jpg",

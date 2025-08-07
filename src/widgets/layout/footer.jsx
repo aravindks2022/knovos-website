@@ -7,23 +7,26 @@ const year = new Date().getFullYear();
 export function Footer({ title, description, socials, menus, copyright }) {
   return (
     <footer className="bg-black text-white relative px-4 pb-6">
-      {/* keep the container but cap the width a bit for nicer mobile centering */}
-      <div className="container mx-auto max-w-screen-lg">
-        <div className="flex flex-wrap pt-6 text-center lg:text-left gap-12 lg:gap-0 justify-center">
-          {/* Company Info - Hidden on mobile */}
-          <div className="hidden lg:block w-full px-4 lg:w-4/12">
+      <div className="container mx-auto max-w-screen-xl">
+        {/* wrapper */}
+        <div className="pt-6 flex flex-col lg:flex-row lg:items-start lg:justify-between gap-12 text-center lg:text-left">
+          
+          {/* Company Info - hidden on mobile */}
+          <div className="hidden lg:block px-4 lg:basis-4/12">
             <Typography variant="h4" className="mb-4" color="white">
               {title}
             </Typography>
-            <Typography className="font-normal text-white lg:w-4/5">
-              {description}
+            <Typography className="font-normal text-white lg:w-4/5 text-lg">
+              Data Management, Redef
+              <span className="text-red-500 font-semibold">AI</span>
+              ned
             </Typography>
           </div>
 
           {/* Useful Links */}
-          <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 place-items-center text-center lg:text-left">
+          <div className="mx-auto lg:mx-0 grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 place-items-center lg:place-items-start text-center lg:text-left">
             {menus.map(({ name, items }) => (
-              <div key={name} className="w-max">
+              <div key={name} className="w-max lg:w-auto">
                 <Typography
                   variant="small"
                   color="white"
@@ -52,7 +55,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
           </div>
 
           {/* Contact Details */}
-          <div className="w-full px-4 lg:w-4/12 max-w-md mx-auto text-center lg:text-left">
+          <div className="px-4 w-full lg:basis-4/12 max-w-md lg:max-w-none mx-auto lg:mx-0 text-center lg:text-left">
             <Typography
               variant="small"
               color="white"
@@ -122,11 +125,11 @@ export function Footer({ title, description, socials, menus, copyright }) {
 }
 
 Footer.defaultProps = {
-  title: "Mantra Data Consultants",
+  title: "MantraDATA Consultants",
   description: "Data Management, RedefAIned",
   menus: [
     {
-      name: "useful links",
+      name: "Links to Other Pages",
       items: [
         { name: "Home", path: "/home" },
         { name: "Contact Us", path: "/contactus" },
