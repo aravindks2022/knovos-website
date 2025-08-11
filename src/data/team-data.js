@@ -1,6 +1,6 @@
 export const teamData = [
   {
-    img: "/img/saravana-avatar.png",
+    img: "/img/saravana-avatar-2.jpg",
     name: "Rama Saravana",
     position: "Founder cum Lead Consultant",
     socials: [

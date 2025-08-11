@@ -23,7 +23,7 @@ export const routes = [
   },
   
   {
-    name: "Contact",
+    name: "Contact Us",
     path: "/contactus",
     element: <ContactUs />,
   },
