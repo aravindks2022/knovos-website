@@ -31,7 +31,7 @@ export function Home() {
                   </span>
                 </Typography>
                 <Typography variant="lead" className="text-white opacity-80">
-                  Your bridge to Legal Tech Excellence — In Collaboration with Knovos, a pioneer in global AI-based Legal and ESG solutions
+                  Your bridge to Legal Tech Excellence — In Collaboration with Knovos, a pioneer in AI-Powered Legal Workflow, ESG, Arbitration, and Case Management Solutions
                 </Typography>
               </div>
             </div>
