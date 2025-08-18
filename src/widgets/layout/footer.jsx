@@ -104,7 +104,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
         <div className="flex flex-wrap items-center justify-center text-center">
           <div className="mx-auto w-full px-4">
             <Typography variant="small" className="font-normal text-gray-400">
-              © {year} Mantra Data Consultants
+              © {year} MantraDATA Consultants
               <span className="text-xs text-gray-600 block mt-1">
                 Built with Material Tailwind by{" "}
                 <a

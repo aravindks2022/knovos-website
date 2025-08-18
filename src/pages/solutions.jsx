@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Footer } from "@/widgets/layout";
 import { solutions } from "../data/solutions-data";
 import { SolutionCard, SolutionModal } from "@/widgets/cards";
+import SEO from "@/widgets/layout/SEO";
 
 export function Solutions() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -17,6 +18,10 @@ export function Solutions() {
   };
 
   return (
+    <>
+      <SEO title="Our Solutions | Case Management Software Singapore | ESG Compliance Solutions Singapore | MANTRADATA Legal Tech | Arbitration Technologies | e-Discovery Solutions" 
+          description="Helping law firms and corporates with legal tech consulting, ESG compliance, arbitration technology, AI-powered eDiscovery, AI in legal, AI for legal works, AI in paralegal, AI smarter solutions, legal customers privacy, legal documentation management, DSAR management" />
+    
     <section
       className="relative bg-cover bg-center text-white"
       style={{ backgroundImage: "url('/img/background-custom-2.png')" }}
@@ -70,6 +75,7 @@ export function Solutions() {
         <Footer />
       </div>
     </section>
+    </>
   );
 }
 

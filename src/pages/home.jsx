@@ -5,9 +5,13 @@ import { BriefcaseIcon } from "@heroicons/react/24/solid";
 import { Footer } from "@/widgets/layout";
 import { FeatureCard } from "@/widgets/cards";
 import { featuresData } from "@/data";
+import SEO from "@/widgets/layout/SEO";
 
 export function Home() {
   return (
+    <>
+      <SEO title="MantraDATA Consultants | Legal Tech, eDiscovery , e-Arbitration and e-Collaboration in Singapore and Global " 
+          description="Helping law firms and corporates with legal tech consulting, ESG compliance, arbitration technology, AI-powered eDiscovery, AI in legal, AI for legal works, AI in paralegal, AI smarter solutions, legal customers privacy, legal documentation management, DSAR management" />
     <section
       className="relative bg-top bg-repeat text-white min-h-screen"
       style={{
@@ -67,15 +71,13 @@ export function Home() {
                   What We Do
                 </Typography>
                 <Typography className="mb-8 font-normal text-gray-300 text-left">
-                  At MantraDATA Consulting, we empower law firms, corporate legal departments,
-                  and ESG-driven organizations to streamline their operations through advanced legal and ESG technology solutions.
-                  As a trusted implementation and sales partner of Knovos, a global leader in legal tech, we help clients adopt cutting-edge platforms for eDiscovery,
-                  contract lifecycle management, compliance, collaboration, and litigation support.
+                  At MantraDATA Consultants, we empower law firms, corporate legal departments, Arbitrators, Dispute Resolvers, and ESG-driven organizations to streamline their operations through advanced legal and ESG technology solutions. As a trusted implementation and sales partner of Knovos, a global leader in legal tech, we help clients adopt cutting-edge platforms for eDiscovery, contract lifecycle management, compliance, collaboration, and litigation support — powered by advanced Knovos technologies.
                   <br />
                   <br />
-                  We specialize in bridging the gap between legal expertise and technology by offering tailored digital solutions that improve efficiency,
-                  ensure regulatory alignment, and unlock strategic value. Whether it's automating workflows, managing data securely,
-                  collaborative work process, or supporting ESG compliance, we enable legal and compliance teams to perform more—with confidence and clarity.
+                  MantraDATA provides expert legal technology consulting in Singapore, helping law firms and corporates with AI-powered eDiscovery, ESG compliance solutions, and arbitration support. Our legal tech consulting services in Singapore include AI-powered eDiscovery, ESG compliance automation, and secure arbitration tools.
+                  <br />
+                  <br />
+                  We specialize in consultatively bridging the gap between legal process management and the ever-evolving technology landscape by offering tailored digital solutions that improve efficiency, ensure regulatory alignment, and unlock strategic value. Whether it's automating workflows, managing data securely, collaborative work process, or supporting ESG compliance, we enable legal and compliance teams to perform more — with confidence and clarity.
                 </Typography>
               </div>
             </div>
@@ -86,6 +88,7 @@ export function Home() {
         <Footer />
       </div>
     </section>
+    </ >
   );
 }
 

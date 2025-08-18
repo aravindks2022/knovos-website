@@ -8,6 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import toast, { Toaster } from "react-hot-toast";
+import SEO from "@/widgets/layout/SEO";
 
 export function ContactUs() {
   const [formData, setFormData] = useState({
@@ -105,6 +106,8 @@ export function ContactUs() {
 
   return (
     <>
+    <SEO title="Contact Us | Case Management Software Singapore | ESG Compliance Solutions Singapore | MANTRADATA Legal Tech | Arbitration Technologies | e-Discovery Solutions" 
+          description="Helping law firms and corporates with legal tech consulting, ESG compliance, arbitration technology, AI-powered eDiscovery, AI in legal, AI for legal works, AI in paralegal, AI smarter solutions, legal customers privacy, legal documentation management, DSAR management" />
       <Toaster position="top-center" reverseOrder={false} />
 
       <section

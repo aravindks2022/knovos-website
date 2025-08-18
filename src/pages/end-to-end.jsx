@@ -1,9 +1,13 @@
 import React from "react";
 import { Footer } from "@/widgets/layout";
 import { steps } from "@/data/end-to-end";
+import SEO from "@/widgets/layout/SEO";
 
 const EndToEndSupport = () => {
   return (
+    <>
+    <SEO title="End-To-End Support | Case Management Software Singapore | ESG Compliance Solutions Singapore | MANTRADATA Legal Tech | Arbitration Technologies | e-Discovery Solutions" 
+          description="Helping law firms and corporates with legal tech consulting, ESG compliance, arbitration technology, AI-powered eDiscovery, AI in legal, AI for legal works, AI in paralegal, AI smarter solutions, legal customers privacy, legal documentation management, DSAR management" />
     <section
       className="relative bg-cover bg-center text-white"
       style={{ backgroundImage: "url('/img/background-custom-2.png')" }}
@@ -73,6 +77,7 @@ const EndToEndSupport = () => {
         <Footer />
       </div>
     </section>
+    </>
   );
 };
 

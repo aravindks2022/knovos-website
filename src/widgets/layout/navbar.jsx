@@ -44,7 +44,7 @@ const baseClasses = "font-heading text-white hover:text-gray-300";
         <div className="flex items-center">
           <Link to="/">
             <Typography className="font-bold text-white text-2xl flex items-center gap-2">
-              <img src="/img/mantralogo.png" alt="Logo" className="h-8" />
+              <img src="/img/mantralogo.png" alt="AI Based Legal Solutions in Singapore - MantraDATA" className="h-8" />
               {brandName}
             </Typography>
           </Link>
