@@ -259,6 +259,9 @@ export function ContactUs() {
                   </a>
                 </div>
               </div>
+               <div className="mt-4 text-xs text-gray-500">
+                By reaching out to us via email or phone, you consent to the collection and use of your personal data for contact purposes only. We respect your privacy and are committed to protecting your personal information. Any data you provide will be used solely to respond to your inquiries or deliver our services, and will not be shared with third parties without your consent, unless required by law.
+              </div>
             </div>
           </div>
         </div>
